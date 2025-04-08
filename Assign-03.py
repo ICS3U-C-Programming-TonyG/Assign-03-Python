@@ -17,7 +17,7 @@ def main():
 
         # Exit while loop. break learned from https://www.w3schools.com/python/ref_keyword_break.asp
         if user_input.lower() == "exit":
-            print("Goodbye!")
+            print("Goodbye.")
             break
 
             # Checks for valid input, also a nested if statement. Len learned from https://www.w3schools.com/python/gloss_python_string_length.asp
