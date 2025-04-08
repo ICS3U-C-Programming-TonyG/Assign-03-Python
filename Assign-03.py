@@ -13,19 +13,19 @@ def main():
     while True:
         user_input = input("Enter a letter (or type 'exit' to quit): ")
 
-  # Exit while loop
+  # Exit while loop. break learned from https://www.w3schools.com/python/ref_keyword_break.asp
         if user_input.lower() == "exit":
             print("Goodbye!")
             break
 
-            # Checks for valid input, also a nested if statement CODE learned from https://www.w3schools.com/python/gloss_python_string_length.asp
+            # Checks for valid input, also a nested if statement. Len learned from https://www.w3schools.com/python/gloss_python_string_length.asp
         if len(user_input) == 1 and user_input in constants.LETTERS_TABLE:
 
-          # Prints and converts letter from upper to lowercase CODE learned from https://www.w3schools.com/python/ref_string_isupper.asp
+          # Prints and converts letter from upper to lowercase. .isupper() learned from https://www.w3schools.com/python/ref_string_isupper.asp
             if user_input.isupper():
                 print("The letter you have inputted is uppercase.")
                 print("The lowercase version is:", user_input.lower())
-            # Prints and converts letter from lower to uppercase CODE learned from https://www.w3schools.com/python/ref_string_islower.asp
+            # Prints and converts letter from lower to uppercase. .islower() learned from https://www.w3schools.com/python/ref_string_islower.asp
             elif user_input.islower():
                 print("The letter you have inputted is lowercase.")
                 print("The uppercase version is:", user_input.upper())
