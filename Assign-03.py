@@ -7,13 +7,15 @@
 # Uppercase lowercase program with extra features
 
 import constants
+
+
 def main():
 
-  # While loop
+    # While loop
     while True:
         user_input = input("Enter a letter (or type 'exit' to quit): ")
 
-  # Exit while loop. break learned from https://www.w3schools.com/python/ref_keyword_break.asp
+        # Exit while loop. break learned from https://www.w3schools.com/python/ref_keyword_break.asp
         if user_input.lower() == "exit":
             print("Goodbye!")
             break
@@ -21,7 +23,7 @@ def main():
             # Checks for valid input, also a nested if statement. Len learned from https://www.w3schools.com/python/gloss_python_string_length.asp
         if len(user_input) == 1 and user_input in constants.LETTERS_TABLE:
 
-          # Prints and converts letter from upper to lowercase. .isupper() learned from https://www.w3schools.com/python/ref_string_isupper.asp
+            # Prints and converts letter from upper to lowercase. .isupper() learned from https://www.w3schools.com/python/ref_string_isupper.asp
             if user_input.isupper():
                 print("The letter you have inputted is uppercase.")
                 print("The lowercase version is:", user_input.lower())
@@ -32,12 +34,13 @@ def main():
                 print("The uppercase version is:", user_input.upper())
 
             # Check if it's in the first or second half of the alphabet
-            if user_input.lower() <= 'm':
+            if user_input.lower() <= "m":
                 print("This letter is in the first half of the alphabet.")
             else:
                 print("This letter is in the second half of the alphabet.")
         else:
             print("Invalid input, please enter a single alphabetical letter.")
+
 
 if __name__ == "__main__":
     main()
