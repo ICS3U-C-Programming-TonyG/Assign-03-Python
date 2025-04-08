@@ -25,6 +25,7 @@ def main():
             if user_input.isupper():
                 print("The letter you have inputted is uppercase.")
                 print("The lowercase version is:", user_input.lower())
+
             # Prints and converts letter from lower to uppercase. .islower() learned from https://www.w3schools.com/python/ref_string_islower.asp
             elif user_input.islower():
                 print("The letter you have inputted is lowercase.")
