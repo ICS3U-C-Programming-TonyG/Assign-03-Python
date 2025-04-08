@@ -18,7 +18,7 @@ def main():
             print("Goodbye!")
             break
 
-            # Checks for valid input, also a nested if statement
+            # Checks for valid input, also a nested if statement CODE learned from https://www.w3schools.com/python/gloss_python_string_length.asp
         if len(user_input) == 1 and user_input in constants.LETTERS_TABLE:
 
           # Prints respective messages for upper/lowercase
