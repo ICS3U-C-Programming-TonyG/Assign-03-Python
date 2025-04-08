@@ -21,7 +21,7 @@ def main():
             # Checks for valid input, also a nested if statement CODE learned from https://www.w3schools.com/python/gloss_python_string_length.asp
         if len(user_input) == 1 and user_input in constants.LETTERS_TABLE:
 
-          # Prints respective messages for upper/lowercase
+          # Prints and converts letter from upper to lowercase CODE learned from https://www.w3schools.com/python/ref_string_isupper.asp
             if user_input.isupper():
                 print("The letter you have inputted is uppercase.")
                 print("The lowercase version is:", user_input.lower())
